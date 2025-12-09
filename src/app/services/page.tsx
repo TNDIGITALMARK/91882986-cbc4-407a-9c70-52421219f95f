@@ -6,13 +6,13 @@ import { Footer } from '@/components/solid-solutionz/Footer';
 import { ServiceCard } from '@/components/solid-solutionz/ServiceCard';
 import { TestimonialCard } from '@/components/solid-solutionz/TestimonialCard';
 import { SERVICES, TESTIMONIALS } from '@/lib/data/mock-data';
-import { Hammer, Wrench, Droplet, Tree, Home, TruckIcon } from 'lucide-react';
+import { Hammer, Wrench, Droplet, TreePine, Home, TruckIcon } from 'lucide-react';
 
 const categoryIcons = {
   carpentry: Hammer,
   concrete: TruckIcon,
   plumbing: Droplet,
-  landscaping: Tree,
+  landscaping: TreePine,
   remodeling: Home,
   general: Wrench,
 };
