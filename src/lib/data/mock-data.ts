@@ -1,0 +1,167 @@
+// Mock data for Solid Solutionz platform
+// Realistic placeholder content for development and demonstration
+
+export const SERVICES = [
+  {
+    id: '1',
+    name: 'Kitchen Remodeling',
+    category: 'remodeling',
+    description: 'Complete kitchen renovations including cabinets, countertops, flooring, and appliances',
+    priceRangeMin: 5000,
+    priceRangeMax: 15000,
+    typicalTimelineDays: 14,
+    iconName: 'utensils',
+  },
+  {
+    id: '2',
+    name: 'Deck Construction',
+    category: 'carpentry',
+    description: 'Custom deck design and installation with quality materials and expert craftsmanship',
+    priceRangeMin: 3000,
+    priceRangeMax: 10000,
+    typicalTimelineDays: 10,
+    iconName: 'hammer',
+  },
+  {
+    id: '3',
+    name: 'Bathroom Plumbing',
+    category: 'plumbing',
+    description: 'Plumbing repairs, installations, and complete bathroom remodels',
+    priceRangeMin: 500,
+    priceRangeMax: 5000,
+    typicalTimelineDays: 3,
+    iconName: 'droplet',
+  },
+  {
+    id: '4',
+    name: 'Concrete Driveways',
+    category: 'concrete',
+    description: 'Durable concrete driveways, patios, and walkways with professional finishing',
+    priceRangeMin: 2000,
+    priceRangeMax: 8000,
+    typicalTimelineDays: 7,
+    iconName: 'truck',
+  },
+  {
+    id: '5',
+    name: 'Landscape Design',
+    category: 'landscaping',
+    description: 'Complete landscaping services including design, planting, and hardscaping',
+    priceRangeMin: 1500,
+    priceRangeMax: 12000,
+    typicalTimelineDays: 14,
+    iconName: 'tree',
+  },
+  {
+    id: '6',
+    name: 'General Repairs',
+    category: 'general',
+    description: 'Fast, reliable repairs for any household issue - no job too small',
+    priceRangeMin: 100,
+    priceRangeMax: 1000,
+    typicalTimelineDays: 1,
+    iconName: 'wrench',
+  },
+];
+
+export const TESTIMONIALS = [
+  {
+    id: '1',
+    customerName: 'Sarah Johnson',
+    serviceCategory: 'Landscape Design',
+    rating: 5,
+    testimonialText: 'Lyle and his team completely transformed our backyard with new concrete patio and landscaping - finished 2 days early and under budget!',
+    projectDetails: 'Backyard transformation with 400 sq ft patio and complete landscaping',
+    isFeatured: true,
+  },
+  {
+    id: '2',
+    customerName: 'Mike Thompson',
+    serviceCategory: 'Bathroom Plumbing',
+    rating: 5,
+    testimonialText: 'Called for emergency plumbing issue, had someone here within an hour on a Sunday. Professional, knowledgeable, and fairly priced.',
+    projectDetails: 'Emergency pipe repair and bathroom sink installation',
+    isFeatured: true,
+  },
+  {
+    id: '3',
+    customerName: 'Jennifer Martinez',
+    serviceCategory: 'Kitchen Remodeling',
+    rating: 5,
+    testimonialText: 'Our kitchen remodel exceeded expectations. Solid Solutionz handled everything from design to final touches. Highly recommend!',
+    projectDetails: 'Full kitchen renovation with custom cabinets and new appliances',
+    isFeatured: true,
+  },
+  {
+    id: '4',
+    customerName: 'Robert Davis',
+    serviceCategory: 'Deck Construction',
+    rating: 5,
+    testimonialText: 'Built a beautiful deck in our backyard. Craftsmanship is top-notch and they cleaned up perfectly after each day.',
+    projectDetails: '300 sq ft composite deck with custom railing',
+    isFeatured: false,
+  },
+  {
+    id: '5',
+    customerName: 'Emily Chen',
+    serviceCategory: 'General Repairs',
+    rating: 5,
+    testimonialText: 'Fixed multiple issues around our house in one visit. Fair pricing and excellent workmanship. Will definitely call again!',
+    projectDetails: 'Door repairs, drywall patch, and cabinet hinge replacement',
+    isFeatured: false,
+  },
+];
+
+export const MOCK_QUOTE_REQUESTS = [
+  {
+    id: '1',
+    customerName: 'John Smith',
+    customerEmail: 'john.smith@email.com',
+    customerPhone: '(555) 123-4567',
+    serviceCategory: 'Kitchen Remodeling',
+    projectDescription: 'Looking to update kitchen with new cabinets, countertops, and appliances',
+    projectSize: 'medium',
+    urgency: 'normal',
+    budgetRange: '$10,000 - $15,000',
+    status: 'quoted',
+    estimatedCost: 12500,
+    estimatedTimelineDays: 14,
+    createdAt: '2024-12-01T10:00:00Z',
+  },
+  {
+    id: '2',
+    customerName: 'Lisa Anderson',
+    customerEmail: 'lisa.anderson@email.com',
+    customerPhone: '(555) 987-6543',
+    serviceCategory: 'Concrete Driveways',
+    projectDescription: 'Need new driveway - current one has major cracks',
+    projectSize: 'large',
+    urgency: 'urgent',
+    budgetRange: '$5,000 - $8,000',
+    status: 'pending',
+    createdAt: '2024-12-08T14:30:00Z',
+  },
+];
+
+export const SERVICE_CATEGORIES = [
+  { value: 'carpentry', label: 'Carpentry', icon: 'hammer' },
+  { value: 'concrete', label: 'Concrete Work', icon: 'truck' },
+  { value: 'plumbing', label: 'Plumbing', icon: 'droplet' },
+  { value: 'landscaping', label: 'Landscaping', icon: 'tree' },
+  { value: 'remodeling', label: 'Remodeling', icon: 'home' },
+  { value: 'general', label: 'General Repairs', icon: 'wrench' },
+];
+
+export const PROJECT_SIZES = [
+  { value: 'small', label: 'Small', description: 'Quick repairs or minor updates' },
+  { value: 'medium', label: 'Medium', description: 'Room renovations or moderate projects' },
+  { value: 'large', label: 'Large', description: 'Major remodels or new construction' },
+  { value: 'extra_large', label: 'Extra Large', description: 'Multi-room or whole home projects' },
+];
+
+export const URGENCY_LEVELS = [
+  { value: 'emergency', label: 'Emergency', description: 'Need help immediately' },
+  { value: 'urgent', label: 'Urgent', description: 'Within the next few days' },
+  { value: 'normal', label: 'Normal', description: 'Within 1-2 weeks' },
+  { value: 'flexible', label: 'Flexible', description: 'No rush, when available' },
+];

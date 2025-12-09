@@ -1,59 +1,82 @@
 @import "tailwindcss";
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+/* Font Imports - Professional Sans-Serif System */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Roboto:wght@400;500;700;900&display=swap');
+
+/* ============================================
+   SOLID SOLUTIONZ DESIGN SYSTEM
+   Handyman/Contractor Platform
+   Primary: Forest Green (#2D5016 / HSL 95 66% 20%)
+   Earth Tones: Warm Browns & Stone Grays
+   Typography: Bold, readable, professional
+   ============================================ */
 
 :root {
-  /* Pure white background with crisp black text */
-  --background: 0 0% 100%;
-  --foreground: 0 0% 0%;
+  /* ===== FOREST GREEN PRIMARY SYSTEM ===== */
+  /* Forest Green - Primary brand color */
+  --primary: 95 66% 20%;  /* #2D5016 - Forest Green */
+  --primary-foreground: 0 0% 100%;  /* White text on green */
 
-  /* Clean white cards with black text */
+  /* Lighter forest green for hovers/accents */
+  --primary-light: 95 55% 35%;  /* Lighter forest green */
+  --primary-dark: 95 70% 15%;   /* Darker forest green */
+
+  /* ===== EARTH TONE COMPLEMENTS ===== */
+  /* Warm brown accent */
+  --secondary: 25 55% 31%;  /* #8B4513 - Warm Brown */
+  --secondary-foreground: 0 0% 100%;
+
+  /* Stone gray neutral */
+  --accent: 0 0% 41%;  /* #696969 - Stone Gray */
+  --accent-foreground: 0 0% 100%;
+
+  /* ===== BACKGROUND SYSTEM ===== */
+  /* Light warm background */
+  --background: 40 20% 97%;  /* Soft warm white */
+  --foreground: 0 0% 10%;  /* Near black for text */
+
+  /* Card backgrounds - clean white */
   --card: 0 0% 100%;
-  --card-foreground: 0 0% 0%;
+  --card-foreground: 0 0% 10%;
 
-  /* Popovers with white background */
+  /* Muted backgrounds */
+  --muted: 95 20% 92%;  /* Light green-tinted gray */
+  --muted-foreground: 0 0% 35%;
+
+  /* Popover backgrounds */
   --popover: 0 0% 100%;
-  --popover-foreground: 0 0% 0%;
+  --popover-foreground: 0 0% 10%;
 
-  /* Primary: Black with white text */
-  --primary: 0 0% 0%;
-  --primary-foreground: 0 0% 100%;
+  /* ===== UTILITY COLORS ===== */
+  /* Success - matches forest green theme */
+  --success: 120 60% 40%;
+  --success-foreground: 0 0% 100%;
 
-  /* Secondary: Light gray background with black text */
-  --secondary: 0 0% 97%;
-  --secondary-foreground: 0 0% 0%;
+  /* Warning - earthy orange */
+  --warning: 35 90% 55%;
+  --warning-foreground: 0 0% 10%;
 
-  /* Muted: Subtle gray with darker text */
-  --muted: 0 0% 96%;
-  --muted-foreground: 0 0% 40%;
-
-  /* Accent: Light gray */
-  --accent: 0 0% 96%;
-  --accent-foreground: 0 0% 0%;
-
-  /* Destructive: Clean red */
+  /* Destructive - professional red */
   --destructive: 0 70% 50%;
   --destructive-foreground: 0 0% 100%;
 
-  /* Borders: Subtle gray */
-  --border: 0 0% 90%;
+  /* ===== BORDERS & INPUTS ===== */
+  --border: 0 0% 88%;
   --input: 0 0% 90%;
-  --ring: 0 0% 0%;
+  --ring: 95 66% 20%;  /* Forest green focus ring */
 
-  /* Minimal rounded corners */
-  --radius: 0.375rem;
+  /* ===== DESIGN TOKENS ===== */
+  --radius: 0.5rem;  /* Slightly rounded for professional look */
 
-  /* Sidebar: Clean white with black text */
-  --sidebar-background: 0 0% 100%;
-  --sidebar-foreground: 0 0% 0%;
-  --sidebar-primary: 0 0% 0%;
+  /* ===== SIDEBAR SYSTEM ===== */
+  --sidebar-background: 95 66% 20%;  /* Forest green sidebar */
+  --sidebar-foreground: 0 0% 100%;
+  --sidebar-primary: 95 55% 35%;
   --sidebar-primary-foreground: 0 0% 100%;
-  --sidebar-accent: 0 0% 96%;
-  --sidebar-accent-foreground: 0 0% 0%;
-  --sidebar-border: 0 0% 90%;
-  --sidebar-ring: 0 0% 0%;
+  --sidebar-accent: 95 70% 15%;
+  --sidebar-accent-foreground: 0 0% 100%;
+  --sidebar-border: 95 60% 25%;
+  --sidebar-ring: 95 55% 35%;
 }
 
 .dark {
@@ -168,28 +191,152 @@ All colors MUST be HSL.
   border-color: hsl(var(--border));
 }
 
+/* ============================================
+   TYPOGRAPHY SYSTEM
+   Bold, Professional, Contractor-Ready
+   ============================================ */
+
+html {
+  font-size: 16px;
+  line-height: 1.6;
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: hsl(var(--background));
   color: hsl(var(--foreground));
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+  font-weight: 400;
   font-feature-settings: "rlig" 1, "calt" 1;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
 }
 
-/* Minimal, clean typography */
+/* ===== HEADING HIERARCHY ===== */
 h1, h2, h3, h4, h5, h6 {
-  font-weight: 600;
-  letter-spacing: -0.025em;
+  font-family: 'Roboto', 'Inter', sans-serif;
+  font-weight: 700;
+  letter-spacing: -0.02em;
   color: hsl(var(--foreground));
+  line-height: 1.2;
+  margin-bottom: 0.5em;
 }
 
-/* Clean button styles */
-button {
+h1 {
+  font-size: 3rem;  /* 48px */
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  margin-bottom: 0.75rem;
+}
+
+h2 {
+  font-size: 2.25rem;  /* 36px */
+  font-weight: 700;
+  margin-bottom: 0.625rem;
+}
+
+h3 {
+  font-size: 1.875rem;  /* 30px */
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+h4 {
+  font-size: 1.5rem;  /* 24px */
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+h5 {
+  font-size: 1.25rem;  /* 20px */
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+h6 {
+  font-size: 1.125rem;  /* 18px */
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+/* ===== TEXT ELEMENTS ===== */
+p {
+  margin-bottom: 1rem;
+  line-height: 1.7;
+}
+
+a {
+  color: hsl(var(--primary));
+  text-decoration: none;
   font-weight: 500;
+  transition: color 0.2s ease;
 }
 
-/* Subtle shadows for depth */
+a:hover {
+  color: hsl(var(--primary-light));
+  text-decoration: underline;
+}
+
+strong, b {
+  font-weight: 700;
+}
+
+em, i {
+  font-style: italic;
+}
+
+code {
+  font-family: 'Courier New', monospace;
+  font-size: 0.9em;
+  background: hsl(var(--muted));
+  padding: 0.2em 0.4em;
+  border-radius: 0.25rem;
+}
+
+/* ===== BUTTON & FORM DEFAULTS ===== */
+button, input[type="submit"], input[type="button"] {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+input, textarea, select {
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+  color: hsl(var(--foreground));
+  background: hsl(var(--background));
+  border: 1px solid hsl(var(--border));
+  border-radius: var(--radius);
+  padding: 0.5rem 0.75rem;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+input:focus, textarea:focus, select:focus {
+  outline: none;
+  border-color: hsl(var(--primary));
+  box-shadow: 0 0 0 3px hsl(var(--primary) / 0.1);
+}
+
+input::placeholder, textarea::placeholder {
+  color: hsl(var(--muted-foreground));
+}
+
+label {
+  font-weight: 500;
+  font-size: 0.875rem;
+  color: hsl(var(--foreground));
+  margin-bottom: 0.375rem;
+  display: inline-block;
+}
+
+/* ===== PROFESSIONAL SHADOWS ===== */
 .shadow-sm {
   box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
 }
@@ -200,4 +347,30 @@ button {
 
 .shadow-md {
   box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
+
+.shadow-lg {
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+}
+
+.shadow-xl {
+  box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+}
+
+/* ===== UTILITY CLASSES ===== */
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
+/* ===== SMOOTH TRANSITIONS ===== */
+* {
+  transition-property: background-color, border-color, color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
 }
