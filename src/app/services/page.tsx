@@ -1,3 +1,5 @@
+'use client';
+
 import { Badge } from '@/components/ui/badge';
 import { Navigation } from '@/components/solid-solutionz/Navigation';
 import { Footer } from '@/components/solid-solutionz/Footer';
