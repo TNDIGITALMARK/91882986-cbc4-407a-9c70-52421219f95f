@@ -19,8 +19,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Elegant Flora Boutique",
-  description: "Beautiful AI-powered website creation platform",
+  title: "Solid Solutionz - Professional Contractor & Handyman Services",
+  description: "Expert handyman and contracting services for all your home and property needs. Licensed, insured, and trusted by 500+ customers. From carpentry to plumbing, landscaping to remodeling - we do it all.",
 };
 
 export default function RootLayout({

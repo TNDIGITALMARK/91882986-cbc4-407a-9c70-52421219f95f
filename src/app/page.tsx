@@ -8,6 +8,7 @@ import { Footer } from '@/components/solid-solutionz/Footer';
 import { ServiceCard } from '@/components/solid-solutionz/ServiceCard';
 import { TestimonialCard } from '@/components/solid-solutionz/TestimonialCard';
 import { QuoteRequestForm } from '@/components/solid-solutionz/QuoteRequestForm';
+import { PortfolioGallery } from '@/components/solid-solutionz/PortfolioGallery';
 import { SERVICES, TESTIMONIALS } from '@/lib/data/mock-data';
 import { CheckCircle2, Clock, Shield, Star } from 'lucide-react';
 
@@ -26,12 +27,12 @@ export default function HomePage() {
                 Professional Contractor Services
               </Badge>
               <h1 className="text-4xl lg:text-6xl font-bold leading-tight text-balance">
-                No Job Too Big, Too Small{' '}
-                <span className="text-primary">We Do It All</span>
+                Professional Contractor Services{' '}
+                <span className="text-primary">You Can Trust</span>
               </h1>
               <p className="text-xl text-muted-foreground leading-relaxed">
-                Expert handyman and contracting services for homeowners and businesses.
-                From carpentry to concrete, plumbing to landscaping - one call does it all.
+                Licensed, insured, and experienced contractors ready to handle any project.
+                From small repairs to major renovations - quality craftsmanship guaranteed.
               </p>
 
               {/* Trust Indicators */}
@@ -78,25 +79,32 @@ export default function HomePage() {
               </div>
             </div>
 
-            {/* Hero Image */}
+            {/* Hero Image - Contractor at Work */}
             <div className="relative">
               <div className="relative rounded-2xl overflow-hidden shadow-2xl">
                 <Image
-                  src="/generated/solid-solutionz-logo.png"
-                  alt="Solid Solutionz Mascot"
-                  width={600}
+                  src="/generated/contractor-at-work.jpg"
+                  alt="Professional Contractor at Work"
+                  width={800}
                   height={600}
-                  className="w-full h-auto"
+                  className="w-full h-auto object-cover"
                   priority
                 />
+                {/* Professional Overlay Badge */}
+                <div className="absolute top-6 right-6 bg-primary text-primary-foreground shadow-lg rounded-lg p-4">
+                  <div className="text-center">
+                    <p className="font-bold text-3xl">15+</p>
+                    <p className="text-sm">Years Experience</p>
+                  </div>
+                </div>
               </div>
-              {/* Floating Badge */}
-              <div className="absolute -bottom-6 -left-6 bg-background shadow-lg rounded-lg p-4 border-2 border-primary">
+              {/* Floating Credentials */}
+              <div className="absolute -bottom-6 -left-6 bg-background shadow-xl rounded-lg p-4 border-2 border-primary">
                 <div className="flex items-center gap-3">
                   <Shield className="h-8 w-8 text-primary" />
                   <div>
                     <p className="font-bold text-sm">Licensed & Insured</p>
-                    <p className="text-xs text-muted-foreground">Fully Certified</p>
+                    <p className="text-xs text-muted-foreground">Certified Professionals</p>
                   </div>
                 </div>
               </div>
@@ -104,6 +112,9 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      {/* Portfolio Gallery Section - Showcase Work */}
+      <PortfolioGallery />
 
       {/* Services Section */}
       <section id="services" className="py-20 bg-muted/30">

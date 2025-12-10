@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import { Badge } from '@/components/ui/badge';
 import { Navigation } from '@/components/solid-solutionz/Navigation';
 import { Footer } from '@/components/solid-solutionz/Footer';
@@ -53,6 +54,74 @@ export default function ServicesPage() {
                 <span className="text-sm font-semibold capitalize">{category}</span>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Featured Work Examples */}
+      <section className="py-16 bg-background">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <Badge className="mb-4">Proven Results</Badge>
+            <h2 className="text-3xl lg:text-4xl font-bold mb-4">
+              See Our Quality in Action
+            </h2>
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+              Real projects we've completed for satisfied customers across our service areas
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
+            {/* Kitchen Remodel Example */}
+            <div className="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all">
+              <Image
+                src="/generated/kitchen-remodel-finished.jpg"
+                alt="Kitchen Remodeling"
+                width={600}
+                height={400}
+                className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent flex items-end">
+                <div className="p-6 text-white">
+                  <h3 className="text-xl font-bold mb-1">Modern Kitchen Remodel</h3>
+                  <p className="text-sm opacity-90">Custom cabinetry & countertops</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Deck Construction Example */}
+            <div className="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all">
+              <Image
+                src="/generated/deck-construction-finished.jpg"
+                alt="Deck Construction"
+                width={600}
+                height={400}
+                className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent flex items-end">
+                <div className="p-6 text-white">
+                  <h3 className="text-xl font-bold mb-1">Custom Cedar Deck</h3>
+                  <p className="text-sm opacity-90">Complete outdoor living space</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Bathroom Renovation Example */}
+            <div className="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all">
+              <Image
+                src="/generated/bathroom-renovation-finished.jpg"
+                alt="Bathroom Renovation"
+                width={600}
+                height={400}
+                className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent flex items-end">
+                <div className="p-6 text-white">
+                  <h3 className="text-xl font-bold mb-1">Luxury Bathroom</h3>
+                  <p className="text-sm opacity-90">Spa-like renovation</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
