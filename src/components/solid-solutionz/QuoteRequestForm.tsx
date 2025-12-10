@@ -232,7 +232,7 @@ export function QuoteRequestForm() {
           <Button
             type="submit"
             size="lg"
-            className="w-full bg-primary hover:bg-primary-dark font-semibold"
+            className="w-full bg-primary hover:bg-primary-dark font-semibold btn-text-white"
             disabled={isSubmitting}
           >
             {isSubmitting ? (

@@ -368,6 +368,13 @@ label {
   text-wrap: balance;
 }
 
+/* ===== BUTTON TEXT CLASSES ===== */
+/* White text class for solid green buttons */
+.btn-text-white {
+  color: #ffffff !important;
+  color: hsl(0 0% 100%) !important;
+}
+
 /* ===== SMOOTH TRANSITIONS ===== */
 * {
   transition-property: background-color, border-color, color, fill, stroke;

@@ -57,9 +57,9 @@ export function Navigation() {
             <Button
               asChild
               size="lg"
-              className="bg-primary hover:bg-primary-dark font-semibold"
+              className="bg-primary hover:bg-primary-dark font-semibold btn-text-white"
             >
-              <Link href="/">
+              <Link href="/" className="btn-text-white">
                 <Phone className="mr-2 h-4 w-4" />
                 Get Free Quote
               </Link>
@@ -93,9 +93,9 @@ export function Navigation() {
                 <Button
                   asChild
                   size="lg"
-                  className="bg-primary hover:bg-primary-dark font-semibold mt-4"
+                  className="bg-primary hover:bg-primary-dark font-semibold mt-4 btn-text-white"
                 >
-                  <Link href="/" onClick={() => setMobileMenuOpen(false)}>
+                  <Link href="/" onClick={() => setMobileMenuOpen(false)} className="btn-text-white">
                     <Phone className="mr-2 h-4 w-4" />
                     Get Free Quote
                   </Link>

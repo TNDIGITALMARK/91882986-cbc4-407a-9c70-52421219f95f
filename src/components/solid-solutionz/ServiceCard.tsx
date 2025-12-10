@@ -68,7 +68,7 @@ export function ServiceCard({
           {/* Request Quote Button */}
           <Button
             onClick={onRequestQuote}
-            className="w-full mt-4 bg-primary hover:bg-primary-dark font-semibold"
+            className="w-full mt-4 bg-primary hover:bg-primary-dark font-semibold btn-text-white"
             size="lg"
           >
             Get Free Quote

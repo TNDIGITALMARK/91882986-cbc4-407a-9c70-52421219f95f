@@ -66,8 +66,8 @@ export default function QuotesPage() {
             <div className="lg:col-span-2 space-y-4">
               <div className="flex justify-between items-center mb-6">
                 <h2 className="text-2xl font-bold">Your Quote Requests</h2>
-                <Button asChild className="bg-primary hover:bg-primary-dark">
-                  <a href="/#quote-form">New Quote Request</a>
+                <Button asChild className="bg-primary hover:bg-primary-dark btn-text-white">
+                  <a href="/#quote-form" className="btn-text-white">New Quote Request</a>
                 </Button>
               </div>
 
@@ -137,8 +137,8 @@ export default function QuotesPage() {
                   <p className="text-muted-foreground mb-6">
                     Get started by submitting your first quote request
                   </p>
-                  <Button asChild className="bg-primary hover:bg-primary-dark">
-                    <a href="/#quote-form">Request Quote</a>
+                  <Button asChild className="bg-primary hover:bg-primary-dark btn-text-white">
+                    <a href="/#quote-form" className="btn-text-white">Request Quote</a>
                   </Button>
                 </Card>
               )}
@@ -227,7 +227,7 @@ export default function QuotesPage() {
 
                         {/* Actions */}
                         <div className="space-y-2">
-                          <Button className="w-full bg-primary hover:bg-primary-dark">
+                          <Button className="w-full bg-primary hover:bg-primary-dark btn-text-white">
                             <MessageSquare className="mr-2 h-4 w-4" />
                             Message Contractor
                           </Button>

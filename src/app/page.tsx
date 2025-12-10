@@ -63,10 +63,10 @@ export default function HomePage() {
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button
                   size="lg"
-                  className="bg-primary hover:bg-primary-dark text-lg px-8 py-6 font-semibold"
+                  className="bg-primary hover:bg-primary-dark text-lg px-8 py-6 font-semibold btn-text-white"
                   asChild
                 >
-                  <a href="#quote-form">Get Free Quote</a>
+                  <a href="#quote-form" className="btn-text-white">Get Free Quote</a>
                 </Button>
                 <Button
                   size="lg"
