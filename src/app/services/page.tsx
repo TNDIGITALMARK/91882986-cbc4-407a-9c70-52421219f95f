@@ -7,7 +7,7 @@ import { Footer } from '@/components/solid-solutionz/Footer';
 import { ServiceCard } from '@/components/solid-solutionz/ServiceCard';
 import { TestimonialCard } from '@/components/solid-solutionz/TestimonialCard';
 import { SERVICES, TESTIMONIALS } from '@/lib/data/mock-data';
-import { Hammer, Wrench, Droplet, TreePine, Home, TruckIcon } from 'lucide-react';
+import { Hammer, Wrench, Droplet, TreePine, Home, TruckIcon, Car, Trash2, Droplets, SprayCan } from 'lucide-react';
 
 const categoryIcons = {
   carpentry: Hammer,
@@ -16,6 +16,10 @@ const categoryIcons = {
   landscaping: TreePine,
   remodeling: Home,
   general: Wrench,
+  mechanic: Car,
+  junk_removal: Trash2,
+  gutter_cleaning: Droplets,
+  power_washing: SprayCan,
 };
 
 export default function ServicesPage() {
@@ -44,14 +48,14 @@ export default function ServicesPage() {
       {/* Service Categories Overview */}
       <section className="py-16 bg-background">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
             {Object.entries(categoryIcons).map(([category, Icon]) => (
               <div
                 key={category}
                 className="flex flex-col items-center justify-center p-6 bg-muted/30 rounded-lg hover:bg-primary/10 hover:shadow-md transition-all cursor-pointer border-2 border-transparent hover:border-primary"
               >
                 <Icon className="h-10 w-10 text-primary mb-3" />
-                <span className="text-sm font-semibold capitalize">{category}</span>
+                <span className="text-sm font-semibold capitalize text-center">{category.replace('_', ' ')}</span>
               </div>
             ))}
           </div>

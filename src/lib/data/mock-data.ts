@@ -62,6 +62,46 @@ export const SERVICES = [
     typicalTimelineDays: 1,
     iconName: 'wrench',
   },
+  {
+    id: '7',
+    name: 'Auto Mechanic Services',
+    category: 'mechanic',
+    description: 'Professional automotive repair and maintenance - oil changes, brake service, diagnostics, and more',
+    priceRangeMin: 150,
+    priceRangeMax: 2500,
+    typicalTimelineDays: 2,
+    iconName: 'car',
+  },
+  {
+    id: '8',
+    name: 'Junk Removal',
+    category: 'junk_removal',
+    description: 'Fast and eco-friendly junk removal - furniture, appliances, yard waste, and construction debris',
+    priceRangeMin: 200,
+    priceRangeMax: 1500,
+    typicalTimelineDays: 1,
+    iconName: 'trash',
+  },
+  {
+    id: '9',
+    name: 'Gutter Cleaning',
+    category: 'gutter_cleaning',
+    description: 'Complete gutter cleaning and maintenance to protect your home from water damage',
+    priceRangeMin: 150,
+    priceRangeMax: 400,
+    typicalTimelineDays: 1,
+    iconName: 'droplets',
+  },
+  {
+    id: '10',
+    name: 'Power Washing',
+    category: 'power_washing',
+    description: 'Professional pressure washing for driveways, decks, siding, and outdoor surfaces',
+    priceRangeMin: 200,
+    priceRangeMax: 800,
+    typicalTimelineDays: 1,
+    iconName: 'spray-can',
+  },
 ];
 
 export const TESTIMONIALS = [
@@ -150,6 +190,10 @@ export const SERVICE_CATEGORIES = [
   { value: 'landscaping', label: 'Landscaping', icon: 'tree' },
   { value: 'remodeling', label: 'Remodeling', icon: 'home' },
   { value: 'general', label: 'General Repairs', icon: 'wrench' },
+  { value: 'mechanic', label: 'Auto Mechanic', icon: 'car' },
+  { value: 'junk_removal', label: 'Junk Removal', icon: 'trash' },
+  { value: 'gutter_cleaning', label: 'Gutter Cleaning', icon: 'droplets' },
+  { value: 'power_washing', label: 'Power Washing', icon: 'spray-can' },
 ];
 
 export const PROJECT_SIZES = [
